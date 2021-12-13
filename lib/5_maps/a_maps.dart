@@ -51,7 +51,7 @@ void main() {
 
   print("");
   print("map dentro de map");
-  var mapa = <String, Object>{
+  var mapa = <String, dynamic>{
     "nome": "Carlos",
     "Curso": [
       {"nomeCurso": "Dart", "descrição": "Melhor curso de Flutter do Brasil"},
@@ -62,4 +62,7 @@ void main() {
     ]
   };
   print(mapa["Curso"]);
+
+  print(mapa["Curso"][0]);
+  print(mapa["Curso"][1]);
 }
