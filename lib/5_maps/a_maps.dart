@@ -18,7 +18,7 @@ void main() {
   print("Alterar produto do Map");
   produtos.update("nome", (nome) => "suco");
   //caso não exista só atribui valor a chave com ifAbsent para cria-lá com um valor
-  produtos.update("preço", (nome) => "10,", ifAbsent: () => "10");
+  produtos.update("preço", (preco) => "10,", ifAbsent: () => "10");
   print(produtos);
 
   print("Recuperando o valor do map");
